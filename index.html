@@ -237,20 +237,6 @@
 </div>
 </section>
 
-<section style="background:linear-gradient(180deg,transparent,rgba(212,175,108,.025) 50%,transparent)">
-<div class="container">
-<div class="section-eyebrow">Sample Build</div>
-<div class="video-section">
-<div class="video-label">AFT Construction · Build Process</div>
-<div class="video-wrap" id="hero-video" role="button" tabindex="0" aria-label="Play AFT Construction build video">
-<div class="video-poster">
-<div class="play-btn"></div>
-</div>
-</div>
-<p class="video-note">Sample video pulled from @aft_construction YouTube to show the channel quality. The operator audience in the comments is the audience the course and scorecard captures.</p>
-</div>
-</div>
-</section>
 
 <section>
 <div class="container">
@@ -258,7 +244,7 @@
 <h2 class="section-title">Everything I built for you, <em>in one place.</em></h2>
 <p class="section-sub">Eight deliverables. The working assets are ready to install. The strategy docs explain the why. Sample Landing Page is the headliner - everything else feeds it.</p>
 
-<a href="landing-page.html" target="_blank" class="deliverable-featured">
+<a href="https://andrei170.github.io/bradley-leavitt-landing/" target="_blank" class="deliverable-featured">
 <div class="featured-thumb-wrap" style="background:var(--bg-elev);min-height:220px;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--border)">
 <span style="font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold);letter-spacing:0.14em;text-transform:uppercase">View Landing Page</span>
 </div>
@@ -479,25 +465,5 @@
 </div>
 </footer>
 
-<script>
-(function(){
-  var v = document.getElementById('hero-video');
-  if(!v) return;
-  function load(){
-    var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed?list=UU' + '&listType=user_uploads&index=0&autoplay=1&rel=0';
-    // Using channel page as fallback - replace with specific video ID once flagship build video is identified
-    // Recommended: most-viewed build-process video from youtube.com/@aft_construction
-    iframe.src = 'https://www.youtube.com/embed?autoplay=1&rel=0&list=UULV-Q5wwKAdN4tE4KsvA110A';
-    iframe.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
-    iframe.setAttribute('allowfullscreen','');
-    iframe.frameBorder = '0';
-    v.innerHTML = '';
-    v.appendChild(iframe);
-  }
-  v.addEventListener('click', load);
-  v.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); load(); }});
-})();
-</script>
 </body>
 </html>
